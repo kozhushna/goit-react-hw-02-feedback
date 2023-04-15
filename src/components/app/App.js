@@ -12,6 +12,8 @@ class App extends Component {
     bad: 0,
   };
 
+  feedbackOptions = () => ['good', 'neutral', 'bad'];
+
   onLeaveFeedback = (e, option) => {
     const updatedState = {
       [option]: this.state[option] + 1,
@@ -38,7 +40,7 @@ class App extends Component {
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            options={this.feedbackOptions()}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>
