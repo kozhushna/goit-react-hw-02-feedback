@@ -6,4 +6,34 @@
 .button {
   font-size: 16px;
   cursor: pointer;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 8px;
+  min-width: 80px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.good-button {
+  background-color: var(--green-color);
+}
+
+.neutral-button {
+  background-color: var(--magenta-color);
+}
+
+.bad-button {
+  background-color: var(--red-color);
+}
+
+.good-button:hover {
+  background-color: rgb(3, 68, 3);
+}
+
+.neutral-button:hover {
+  background-color: rgb(49, 5, 78);
+}
+
+.bad-button:hover {
+  background-color: rgb(117, 4, 4);
 }

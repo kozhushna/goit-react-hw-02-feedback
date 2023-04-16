@@ -1,3 +1,19 @@
 .list {
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.good-item {
+  color: var(--green-color);
+}
+
+.neutral-item {
+  color: var(--magenta-color);
+}
+
+.bad-item {
+  color: var(--red-color);
 }

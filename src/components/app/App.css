@@ -1,1 +1,5 @@
-
+:root {
+  --green-color: green;
+  --magenta-color: rgb(89, 54, 112);
+  --red-color: red;
+}
