@@ -26,14 +26,17 @@
   background-color: var(--red-color);
 }
 
-.good-button:hover {
+.good-button:hover,
+.good-button:focus {
   background-color: rgb(3, 68, 3);
 }
 
-.neutral-button:hover {
+.neutral-button:hover,
+.neutral-button:focus {
   background-color: rgb(49, 5, 78);
 }
 
-.bad-button:hover {
+.bad-button:hover,
+.bad-button:focus {
   background-color: rgb(117, 4, 4);
 }
