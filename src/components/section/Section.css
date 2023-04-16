@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 30px;
+}
+
+.title {
+  margin-bottom: 15px;
+}

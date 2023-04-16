@@ -5,14 +5,14 @@ import FeedbackOptions from 'components/feedbackOptions';
 import Statistics from 'components/statistics';
 import Notification from 'components/notification';
 
+const feedbackOptions = ['good', 'neutral', 'bad'];
+
 class App extends Component {
   state = {
     good: 0,
     neutral: 0,
     bad: 0,
   };
-
-  feedbackOptions = () => ['good', 'neutral', 'bad'];
 
   onLeaveFeedback = (e, option) => {
     const updatedState = {
@@ -40,7 +40,7 @@ class App extends Component {
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={this.feedbackOptions()}
+            options={feedbackOptions}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>
