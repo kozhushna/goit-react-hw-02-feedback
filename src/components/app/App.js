@@ -14,12 +14,10 @@ class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = (e, option) => {
-    const updatedState = {
-      [option]: this.state[option] + 1,
-    };
-
-    this.setState(updatedState);
+  onLeaveFeedback = option => {
+    this.setState(prevState => ({
+      [option]: prevState[option] + 1,
+    }));
   };
 
   countTotalFeedback() {
